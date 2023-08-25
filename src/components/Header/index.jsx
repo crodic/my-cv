@@ -56,7 +56,7 @@ const Header = () => {
     };
     return (
         <>
-            <AppBar position="static">
+            <AppBar position="fixed">
                 <Toolbar sx={{ width: "89%", margin: "0 auto", padding: 0 }}>
                     {/**Logo */}
                     <Box
