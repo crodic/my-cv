@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import Header from "../../components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Skill from "./components/Skill";
 
 const HomePage = () => {
     return (
@@ -24,6 +25,7 @@ const HomePage = () => {
                 >
                     <Hero />
                     <About />
+                    <Skill />
                 </Box>
             </Box>
         </>

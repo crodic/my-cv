@@ -30,8 +30,6 @@ const AboutImage = styled(Box)(({ theme }) => ({
                     ? "0px 17px 5px 5px black"
                     : "0px 17px 5px 5px white",
             margin: "0 auto",
-            width: "280px",
-            height: "360px",
         },
     },
 }));
@@ -69,7 +67,11 @@ const About = () => {
                 }}
             >
                 <AboutImage>
-                    <img src={Profile2} alt="avatar" />
+                    <img
+                        style={{ width: "240px", height: "320px" }}
+                        src="https://scontent.fsgn13-3.fna.fbcdn.net/v/t1.15752-9/368397681_2535006403340173_6447416979150528684_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=FWpjPRbRUfUAX85X85Q&_nc_oc=AQki7q6IddSrwVqg9Un9NBx3WM7sZCFpRpxOdvJKbPwtRKVXVqQvabgnyFt0MWPhXy0nC1ZqoJz4HeUVI4WyCKaQ&_nc_ht=scontent.fsgn13-3.fna&oh=03_AdQdGEmkkw_xHGp1QkP-djjsC6Kz_LsPPEr8vKdmfxRg8g&oe=650F9175"
+                        alt="avatar"
+                    />
                 </AboutImage>
 
                 <Box
