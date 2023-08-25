@@ -27,12 +27,16 @@ const HeroImage = styled(Box)(({ theme }) => ({
             theme.palette.mode === "light"
                 ? "40px 40px 5px black"
                 : "40px 40px 5px white",
+        width: "280px",
+        height: "320px",
         [theme.breakpoints.down("lg")]: {
             boxShadow:
                 theme.palette.mode === "light"
                     ? "0px 17px 5px 5px black"
                     : "0px 17px 5px 5px white",
             margin: "0 auto",
+            width: "240px",
+            height: "280px",
         },
     },
 }));
@@ -103,7 +107,6 @@ const Hero = () => {
             </Box>
             <HeroImage>
                 <img
-                    style={{ width: "240px", height: "280px" }}
                     src="https://scontent.fsgn13-3.fna.fbcdn.net/v/t1.15752-9/368387471_232190832684238_3681769978812838323_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=8iQbc-_bq_EAX8hATFQ&_nc_ht=scontent.fsgn13-3.fna&oh=03_AdTlMOR3F4NYxSN5a6Pz68SCzDws5kU5Z6IwT-gTW596DQ&oe=650F97ED"
                     alt="avatar"
                 />
