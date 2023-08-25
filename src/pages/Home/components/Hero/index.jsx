@@ -8,7 +8,7 @@ import styled from "@emotion/styled";
 const HeroLayout = styled(Box)(({ theme }) => ({
     display: "flex",
     gap: "48px",
-    marginTop: "96px",
+    marginTop: "calc(96px + 64px)",
     justifyContent: "space-around",
     flexDirection: "row",
     [theme.breakpoints.down("lg")]: {
