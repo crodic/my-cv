@@ -32,7 +32,10 @@ const SkillItem = styled(Box)`
     justify-content: center;
     align-items: center;
     gap: 10px;
-    transition: all 1s linear;
+
+    img {
+        transition: all 0.5s linear;
+    }
 
     &:hover img {
         transform: scale(1.1);
