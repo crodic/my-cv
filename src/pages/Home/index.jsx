@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skill from "./components/Skill";
 import Footer from "../../components/Footer";
+import Project from "./components/Project";
 
 const HomePage = () => {
     return (
@@ -11,7 +12,6 @@ const HomePage = () => {
             <Box
                 sx={{
                     width: "100%",
-                    minHeight: "100vh",
                     maxWidth: "1440px",
                     margin: "0 auto",
                     backgroundColor: "#fffff",
@@ -27,6 +27,7 @@ const HomePage = () => {
                     <Hero />
                     <About />
                     <Skill />
+                    <Project />
                     <Footer />
                 </Box>
             </Box>
