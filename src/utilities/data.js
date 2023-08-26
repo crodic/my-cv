@@ -1,4 +1,4 @@
-import FigureStore from "/src/assets/images/myCV.png";
+import FigureStore from "/src/assets/images/figurestore.png";
 import Portfolio from "/src/assets/images/Portfolio.png"
 import TMDB from "/src/assets/images/tmdb.png"
 
