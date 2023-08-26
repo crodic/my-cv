@@ -8,7 +8,8 @@ const CustomFooter = styled(Box)(({ theme }) => ({
     alignItems: "center",
     height: "68px",
     fontSize: "14px",
-    backgroundColor: theme.palette.mode === "light" ? "#F9FAFB" : "#111827",
+    backgroundColor: theme.palette.mode === "light" ? "#ffffff" : "#111827",
+    borderTop: "1px solid",
 }));
 
 const Footer = () => {

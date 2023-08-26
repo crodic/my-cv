@@ -16,7 +16,7 @@ const ProjectLayout = styled(Box)(({ theme }) => ({
 
 const Project = () => {
     return (
-        <ProjectLayout>
+        <ProjectLayout id="project">
             <Box
                 sx={{
                     display: "flex",

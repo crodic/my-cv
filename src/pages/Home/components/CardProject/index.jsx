@@ -23,7 +23,7 @@ const CustomPaper = styled(Paper)(({ theme }) => ({
     "& img": {
         width: "480px",
         height: "100%",
-        objectFit: "contain",
+        objectFit: "fill",
     },
 
     [theme.breakpoints.down("lg")]: {
@@ -96,7 +96,7 @@ const CardProject = ({ data }) => {
                             }}
                             target="_black"
                         >
-                            Github của Dự Án
+                            Xem Trang Tại Đây
                         </Link>
                     </Box>
                 )}

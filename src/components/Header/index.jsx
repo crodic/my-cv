@@ -7,7 +7,6 @@ import {
     IconButton,
     List,
     ListItem,
-    ListItemAvatar,
     ListItemButton,
     ListItemIcon,
     ListItemText,
@@ -15,20 +14,14 @@ import {
     Typography,
 } from "@mui/material";
 import Logo from "../../assets/images/came.svg";
-import {
-    Close,
-    DarkMode,
-    LibraryAdd,
-    LightMode,
-    Menu,
-} from "@mui/icons-material";
+import { Close, DarkMode, LightMode, Menu } from "@mui/icons-material";
 import { useDispatch, useSelector } from "react-redux";
 import { stateApp } from "../../redux/selector";
 import { changeMode } from "../../redux/slice/appSlice";
 import styled from "@emotion/styled";
 import { useState } from "react";
 
-const ListMenu = ["About", "Work", "Testimonials", "Contact"];
+const ListMenu = ["About", "Skills", "Project", "Contact"];
 
 const CustomButton = styled(Button)(({ theme }) => ({
     backgroundColor: theme.palette.mode === "light" ? "#030712" : "#ffffff",
@@ -83,7 +76,7 @@ const Header = () => {
                                     key={index}
                                     variant="text"
                                     sx={{ color: "text.primary" }}
-                                    href="#about"
+                                    href={`#${item.toLowerCase()}`}
                                 >
                                     {item}
                                 </Button>
@@ -93,7 +86,11 @@ const Header = () => {
                         <IconButton onClick={handleChangeMode}>
                             {mode === "light" ? <LightMode /> : <DarkMode />}
                         </IconButton>
-                        <CustomButton variant="contained">
+                        <CustomButton
+                            variant="contained"
+                            download
+                            href="/src/assets/videos/came.svg"
+                        >
                             Download CV
                         </CustomButton>
                     </Box>
@@ -157,10 +154,9 @@ const Header = () => {
                                     onClick={toggleDrawer(drawer, false)}
                                     onKeyDown={toggleDrawer(drawer, false)}
                                 >
-                                    <ListItemButton>
-                                        <ListItemIcon>
-                                            <LibraryAdd />
-                                        </ListItemIcon>
+                                    <ListItemButton
+                                        href={`#${item.toLowerCase()}`}
+                                    >
                                         <ListItemText>{item}</ListItemText>
                                     </ListItemButton>
                                 </ListItem>
@@ -180,7 +176,12 @@ const Header = () => {
                             </ListItemButton>
                         </ListItem>
                         <ListItem>
-                            <CustomButton variant="contained" fullWidth>
+                            <CustomButton
+                                variant="contained"
+                                fullWidth
+                                download
+                                href="/src/assets/videos/came.svg"
+                            >
                                 Download CV
                             </CustomButton>
                         </ListItem>

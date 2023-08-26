@@ -41,7 +41,7 @@ const HeroImage = styled(Box)(({ theme }) => ({
 
 const Hero = () => {
     return (
-        <HeroLayout>
+        <HeroLayout id="hero">
             <Box
                 sx={{
                     paddingX: "20px",

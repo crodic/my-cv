@@ -62,7 +62,7 @@ const dataSkill = [
 const Skill = () => {
     const theme = useTheme();
     return (
-        <SkillLayout>
+        <SkillLayout id="skills">
             <Box
                 sx={{
                     display: "flex",
