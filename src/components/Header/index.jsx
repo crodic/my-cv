@@ -20,6 +20,7 @@ import { stateApp } from "../../redux/selector";
 import { changeMode } from "../../redux/slice/appSlice";
 import styled from "@emotion/styled";
 import { useState } from "react";
+import CV from "../../assets/images/figurestore.png";
 
 const ListMenu = ["About", "Skills", "Project", "Contact"];
 
@@ -88,8 +89,8 @@ const Header = () => {
                         </IconButton>
                         <CustomButton
                             variant="contained"
-                            download="figurestore.png"
-                            href="../../assets/images/figurestore.png"
+                            download="cv"
+                            href={CV}
                         >
                             Download CV
                         </CustomButton>
@@ -179,8 +180,8 @@ const Header = () => {
                             <CustomButton
                                 variant="contained"
                                 fullWidth
-                                download="figurestore.png"
-                                href="../../assets/images/figurestore.png"
+                                download="cv"
+                                href={CV}
                             >
                                 Download CV
                             </CustomButton>
