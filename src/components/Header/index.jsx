@@ -88,8 +88,7 @@ const Header = () => {
                         </IconButton>
                         <CustomButton
                             variant="contained"
-                            download
-                            href="/src/assets/videos/cv.txt"
+                            download="/src/assets/videos/cv.txt"
                         >
                             Download CV
                         </CustomButton>
@@ -179,8 +178,7 @@ const Header = () => {
                             <CustomButton
                                 variant="contained"
                                 fullWidth
-                                download
-                                href="/src/assets/videos/cv.txt"
+                                download="/src/assets/videos/cv.txt"
                             >
                                 Download CV
                             </CustomButton>
