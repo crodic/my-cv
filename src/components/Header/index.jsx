@@ -20,7 +20,7 @@ import { stateApp } from "../../redux/selector";
 import { changeMode } from "../../redux/slice/appSlice";
 import styled from "@emotion/styled";
 import { useState } from "react";
-import CV from "../../assets/images/figurestore.png";
+import CV from "../../assets/videos/videoBackground_480p.mp4";
 
 const ListMenu = ["About", "Skills", "Project", "Contact"];
 
