@@ -1,47 +1,39 @@
-import {
-    Box,
-    Chip,
-    IconButton,
-    Link,
-    Paper,
-    Tooltip,
-    Typography,
-} from "@mui/material";
-import { Source } from "@mui/icons-material";
-import CallMissedOutgoingIcon from "@mui/icons-material/CallMissedOutgoing";
-import styled from "@emotion/styled";
+import { Box, Chip, IconButton, Link, Paper, Tooltip, Typography } from '@mui/material';
+import { Source } from '@mui/icons-material';
+import CallMissedOutgoingIcon from '@mui/icons-material/CallMissedOutgoing';
+import styled from '@emotion/styled';
 
 const CustomPaper = styled(Paper)(({ theme }) => ({
-    width: "100%",
-    height: "480px",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    gap: "40px",
-    padding: "48px",
+    width: '100%',
+    height: 'auto',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '40px',
+    padding: '48px',
 
-    "& img": {
-        width: "480px",
-        height: "100%",
-        objectFit: "fill",
+    '& img': {
+        maxWidth: '100%',
+        height: 'auto',
+        objectFit: 'cover',
     },
 
-    [theme.breakpoints.down("lg")]: {
-        flexDirection: "column",
-        height: "auto",
-        padding: "20px",
+    [theme.breakpoints.down('lg')]: {
+        flexDirection: 'column',
+        height: 'auto',
+        padding: '20px',
 
-        "& img": {
-            width: "100%",
-            height: "100%",
+        '& img': {
+            width: '100%',
+            height: '100%',
         },
 
-        "& .mobile-image": {
-            width: "100%",
+        '& .mobile-image': {
+            width: '100%',
         },
 
-        "& .wrapper-content": {
-            width: "100%",
+        '& .wrapper-content': {
+            width: '100%',
         },
     },
 }));
@@ -51,8 +43,8 @@ const CardProject = ({ data }) => {
         <CustomPaper elevation={3}>
             <Box
                 sx={{
-                    width: "50%",
-                    height: "100%",
+                    width: '50%',
+                    height: '100%',
                 }}
                 className="mobile-image"
             >
@@ -60,12 +52,12 @@ const CardProject = ({ data }) => {
             </Box>
             <Box
                 sx={{
-                    width: "50%",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "flex-start",
+                    width: '50%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'flex-start',
                     gap: 3,
-                    height: "100%",
+                    height: '100%',
                 }}
                 className="wrapper-content"
             >
@@ -73,7 +65,7 @@ const CardProject = ({ data }) => {
                     {data.title}
                 </Typography>
                 <Typography variant="caption">{data.description}</Typography>
-                <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
+                <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
                     {data?.tags?.map((chip, index) => {
                         return <Chip label={chip} key={`crodic-${index}`} />;
                     })}
@@ -81,9 +73,9 @@ const CardProject = ({ data }) => {
                 {data.linkPage && (
                     <Box
                         sx={{
-                            display: "flex",
+                            display: 'flex',
                             gap: 1,
-                            alignItems: "center",
+                            alignItems: 'center',
                         }}
                     >
                         <IconButton href={data.linkPage} target="_blank">
@@ -92,7 +84,7 @@ const CardProject = ({ data }) => {
                         <Link
                             href={data.linkPage}
                             sx={{
-                                color: "blue",
+                                color: 'blue',
                             }}
                             target="_black"
                         >
@@ -103,9 +95,9 @@ const CardProject = ({ data }) => {
                 {data.linkCode && (
                     <Box
                         sx={{
-                            display: "flex",
+                            display: 'flex',
                             gap: 3,
-                            alignItems: "center",
+                            alignItems: 'center',
                         }}
                     >
                         <Tooltip title="Source Code">

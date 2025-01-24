@@ -1,14 +1,14 @@
-import styled from "@emotion/styled";
-import { Box, Chip, Typography, useTheme } from "@mui/material";
-import { dataSkill } from "../../../../utilities/data";
+import styled from '@emotion/styled';
+import { Box, Chip, Typography, useTheme } from '@mui/material';
+import { dataSkill } from '../../../../utilities/data';
 
 const SkillLayout = styled(Box)(({ theme }) => ({
-    display: "flex",
-    gap: "10px",
-    margin: "50px auto",
-    justifyContent: "space-around",
-    alignItems: "center",
-    flexDirection: "column",
+    display: 'flex',
+    gap: '10px',
+    margin: '50px auto',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    flexDirection: 'column',
 }));
 
 const SkillItem = styled(Box)`
@@ -36,18 +36,18 @@ const Skill = () => {
         <SkillLayout id="skills">
             <Box
                 sx={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
                 }}
             >
                 <Chip
                     label="Skills"
                     sx={{
-                        marginTop: "96px",
-                        paddingX: "20px",
+                        marginTop: '96px',
+                        paddingX: '20px',
                         fontWeight: 500,
-                        fontSize: "14px",
+                        fontSize: '14px',
                     }}
                 />
             </Box>
@@ -56,29 +56,24 @@ const Skill = () => {
             </Typography>
             <Box
                 sx={{
-                    width: "90%",
-                    display: "flex",
-                    flexWrap: "wrap",
+                    width: '90%',
+                    display: 'flex',
+                    flexWrap: 'wrap',
                     gap: 7,
-                    justifyContent: { xs: "space-around", lg: "flex-start" },
-                    margin: "0 auto",
-                    paddingTop: "50px",
+                    justifyContent: { xs: 'space-around', lg: 'flex-start' },
+                    margin: '0 auto',
+                    paddingTop: '50px',
                 }}
             >
                 {dataSkill.map((item) => {
                     return (
                         <SkillItem key={item.key}>
                             <img
-                                src={
-                                    item.extraIcon &&
-                                    theme.palette.mode === "light"
-                                        ? item.extraIcon
-                                        : item.icon
-                                }
+                                src={item.extraIcon && theme.palette.mode === 'light' ? item.extraIcon : item.icon}
                                 style={{
-                                    width: "100%",
-                                    height: "70px",
-                                    cursor: "pointer",
+                                    width: '100%',
+                                    height: '70px',
+                                    cursor: 'pointer',
                                 }}
                             />
                             <span>{item.value}</span>
