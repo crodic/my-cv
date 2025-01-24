@@ -53,11 +53,12 @@ const CardProject = ({ data }) => {
             <Box
                 sx={{
                     width: '50%',
+                    height: '100%',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'flex-start',
+                    alignItems: 'flex-start',
                     gap: 3,
-                    height: '100%',
                 }}
                 className="wrapper-content"
             >

@@ -59,7 +59,7 @@ const Header = () => {
                         flexGrow={1}
                     >
                         <img src={Logo} alt="logo-came" style={{ width: '40px', height: '40px' }} />
-                        <Typography variant="h6">CAME</Typography>
+                        <Typography variant="h6">Animazing</Typography>
                     </Box>
 
                     {/**Action */}

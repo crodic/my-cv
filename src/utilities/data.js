@@ -1,4 +1,4 @@
-import FigureStore from '/src/assets/images/figurestore.png';
+import Project1 from '/src/assets/images/project1.jpg';
 import Portfolio from '/src/assets/images/Portfolio.png';
 import Javascript from '../assets/images/icon-javscript.svg';
 import Tailwind from '../assets/images/icon-tailwindcss.svg';
@@ -18,10 +18,10 @@ import SASS from '../assets/images/icon-sass.svg';
 export const dataProject = [
     {
         key: 1,
-        title: 'Website bán mô hình figure Nhật Bản',
+        title: 'Website Bán Mô Hình Figure Nhật Bản',
         description:
             'Đây là dự án website MERN stack đầu tiên của tôi, dự án này áp dụng toàn bộ kiến thức về ReactJS mà tôi đã học, cùng với 1 API cơ bản mà tôi dùng NodeJS, ExpressJS, MongoDB để viết lên. VÌ LÝ DO SERVER NÊN HIỆN TẠI WEBSITE CHƯA ĐƯỢC PUBLIC',
-        image: FigureStore,
+        image: Project1,
         linkPage: null,
         linkCode: 'https://github.com/Crodic/came-client',
         tags: ['ReactJS', 'Tailwind CSS', 'NodeJS', 'ExpressJS', 'MongoDB'],
