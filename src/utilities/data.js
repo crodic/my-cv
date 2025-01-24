@@ -1,6 +1,5 @@
 import FigureStore from '/src/assets/images/figurestore.png';
 import Portfolio from '/src/assets/images/Portfolio.png';
-import TMDB from '/src/assets/images/tmdb.png';
 import Javascript from '../assets/images/icon-javscript.svg';
 import Tailwind from '../assets/images/icon-tailwindcss.svg';
 import ReactIcon from '../assets/images/icon-react.svg';
